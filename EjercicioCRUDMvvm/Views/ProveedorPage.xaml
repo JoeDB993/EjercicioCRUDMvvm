@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:EjercicioCRUDMvvm.ViewModels"
+             x:Class="EjercicioCRUDMvvm.Views.ProveedorPage">
+
+    <StackLayout Padding="20">
+        <Label Text="Nombre del Proveedor"/>
+        <Entry Text="{Binding Nombre}" Placeholder="Nombre" />
+
+        <Label Text="Producto que ofrece"/>
+        <Entry Text="{Binding Producto}" Placeholder="Producto" />
+
+        <Label Text="Descripción del Producto"/>
+        <Entry Text="{Binding Descripcion}" Placeholder="Descripción" />
+
+        <Label Text="Precio"/>
+        <Entry Text="{Binding Precio}" Placeholder="Precio" Keyboard="Numeric" />
+
+        <Label Text="Teléfono"/>
+        <Entry Text="{Binding Telefono}" Placeholder="Teléfono" Keyboard="Telephone" />
+
+        <Button Text="Agregar Proveedor" Command="{Binding AddProveedorCommand}" Margin="0,10,0,0"/>
+        <Button Text="Cargar Proveedores" Command="{Binding LoadProveedoresCommand}" Margin="0,10,0,0"/>
+
+        <ListView ItemsSource="{Binding Proveedores}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Nombre}" Detail="{Binding Producto}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
+

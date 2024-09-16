@@ -1,8 +1,6 @@
 ﻿using SQLite;
-using SQLiteNetExtensionsAsync.Extensions;
 using EjercicioCRUDMvvm.Models;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+
 
 namespace EjercicioCRUDMvvm.Services
 {
