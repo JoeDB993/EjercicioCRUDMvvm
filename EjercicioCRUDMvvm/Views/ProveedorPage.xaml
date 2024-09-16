@@ -5,14 +5,14 @@
              x:Class="EjercicioCRUDMvvm.Views.ProveedorPage">
 
     <StackLayout Padding="20">
-        <Label Text="Nombre del Proveedor"/>
-        <Entry Text="{Binding Nombre}" Placeholder="Nombre" />
+        <Label Text="Nombre del Proveedor" />
+        <Entry Text="{Binding Nombre}" Placeholder="Nombre" Keyboard="Text"/>
 
-        <Label Text="Producto que ofrece"/>
-        <Entry Text="{Binding Producto}" Placeholder="Producto" />
+        <Label Text="Producto que ofrece" />
+        <Entry Text="{Binding Producto}" Placeholder="Producto" Keyboard="Text"/>
 
-        <Label Text="Descripción del Producto"/>
-        <Entry Text="{Binding Descripcion}" Placeholder="Descripción" />
+        <Label Text="Descripción del Producto"  />
+        <Entry Text="{Binding Descripcion}" Placeholder="Descripción" Keyboard="Text"/>
 
         <Label Text="Precio"/>
         <Entry Text="{Binding Precio}" Placeholder="Precio" Keyboard="Numeric" />
